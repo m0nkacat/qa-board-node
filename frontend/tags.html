@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Tags</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+<h1>TAGS</h1>
+<a href="index.html">← BACK</a>
+</header>
+
+<main>
+
+<div class="cards-container">
+    <div class="card special">
+        <h3>ADD TAG</h3>
+        <input id="name" placeholder="tag name">
+        <button class="btn btn-success" onclick="addTag()">ADD</button>
+        <button class="btn btn-secondary" onclick="loadTags()">LOAD</button>
+    </div>
+</div>
+
+<div class="cards-container" id="list"></div>
+
+</main>
+
+<script src="tags.js"></script>
+</body>
+</html>

@@ -1,0 +1,269 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #1a1a2e;
+    font-family: Arial;
+    color: white;
+    padding: 20px;
+}
+
+
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+
+a {
+    color: #ffaa66;
+    text-decoration: none;
+}
+
+
+.form-card {
+    width: 500px;
+    margin: 0 auto 30px auto;
+    background: #2c1a3a;
+    border: 2px solid #ffaa44;
+    border-radius: 16px;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+
+input {
+    padding: 10px;
+    border-radius: 8px;
+    border: none;
+    width: 100%;
+}
+
+
+button {
+    padding: 8px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+
+.button-row {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+
+
+.checkbox-row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    color: white;
+}
+.checkbox-row input[type="checkbox"] {
+    width: auto;
+    margin: 0;
+}
+
+
+.cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+}
+
+
+.card {
+    width: 260px;
+    background: #0f3460;
+    padding: 15px;
+    border: 2px solid #e94560;
+    border-radius: 16px;
+    text-align: center;
+}
+
+
+.card.special {
+    background: #2c1a3a;
+    border-color: #ffaa44;
+}
+
+
+.card.users {
+    background: #2d3a4a;
+    border-color: #4fc3f7;
+}
+.card.questions {
+    background: #3a2a4a;
+    border-color: #ce93d8;
+}
+.card.tags {
+    background: #2a4a3a;
+    border-color: #81c784;
+}
+.card.todos {
+    background: #4a3a2a;
+    border-color: #ffb74d;
+}
+
+
+.btn {
+    display: inline-block;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 14px;
+    color: white;
+    transition: background 0.2s;
+}
+
+
+.btn-primary {
+    background: #4fc3f7;
+    color: #1a1a2e;
+}
+.btn-primary:hover {
+    background: #29b6f6;
+}
+
+.btn-success {
+    background: #81c784;
+    color: #1a1a2e;
+}
+.btn-success:hover {
+    background: #66bb6a;
+}
+
+.btn-danger {
+    background: #e57373;
+}
+.btn-danger:hover {
+    background: #ef5350;
+}
+
+.btn-secondary {
+    background: #757575;
+}
+.btn-secondary:hover {
+    background: #616161;
+}
+
+
+.button-row .btn {
+    margin: 2px;
+}
+
+.header-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    margin-bottom: 20px;
+    text-align: left; 
+}
+.header-row h1,
+.header-row h2 {
+    margin: 0;
+}
+
+.kanban-header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+.kanban-desc {
+    text-align: center;
+    color: #cccccc;
+    margin-bottom: 15px;
+}
+.form-row {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+.form-row input {
+    width: auto;
+    flex: 1;
+    max-width: 300px;
+}
+.filter-row {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 15px;
+}
+.filter-row input {
+    max-width: 400px;
+}
+.board {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+.column {
+    background: #16213e;
+    border: 2px solid #533483;
+    border-radius: 12px;
+    width: 240px;
+    min-height: 400px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    transition: border-color 0.2s, background 0.2s;
+}
+.column.drag-over {
+    border-color: #e94560;
+    background: #1f3050;
+}
+.column h3 {
+    text-align: center;
+    color: #ffaa66;
+    margin-bottom: 10px;
+}
+.task-card {
+    background: #0f3460;
+    border: 1px solid #e94560;
+    border-radius: 8px;
+    padding: 8px;
+    margin-bottom: 8px;
+    cursor: grab;
+    color: white;
+    word-break: break-word;
+    transition: opacity 0.2s;
+}
+.task-card:active {
+    cursor: grabbing;
+}
+.task-card.dragging {
+    opacity: 0.4;
+}
+.task-card button {
+    margin-top: 5px;
+    font-size: 12px;
+}
+.counter-row {
+    text-align: center;
+    margin-bottom: 15px;
+    font-size: 16px;
+    color: #ffaa66;
+}
+.notification {
+    text-align: center;
+    padding: 10px;
+    margin: 10px auto;
+    max-width: 600px;
+    background: #2c1a3a;
+    border: 1px solid #ffaa44;
+    border-radius: 8px;
+    display: none;
+}

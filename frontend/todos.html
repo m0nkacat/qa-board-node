@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Todos</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+<h1>TODOS</h1>
+<a href="index.html">← BACK</a>
+</header>
+
+<main>
+
+<div class="cards-container">
+    <div class="card special">
+        <h3>ADD TODO</h3>
+        <input id="title" placeholder="title">
+        <input id="description" placeholder="description">
+        <div class="checkbox-row">
+            <input type="checkbox" id="is_done">
+            <label for="is_done">is done</label>
+        </div>
+        <div class="button-row">
+            <button class="btn btn-success" onclick="addTodo()">ADD</button>
+            <button class="btn btn-secondary" onclick="loadTodos()">LOAD</button>
+        </div>
+    </div>
+</div>
+
+<div class="cards-container" id="list"></div>
+
+</main>
+
+<script src="todos.js"></script>
+</body>
+</html>

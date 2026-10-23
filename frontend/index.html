@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Dashboard</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="header-row">
+    <div>
+        <h1>ADMIN DASHBOARD</h1>
+        <h2 id="statusMessage">Выбери раздел</h2>
+    </div>
+    <button id="logoutBtn" class="btn btn-danger" onclick="logout()" style="display: none;">Выйти</button>
+</header>
+
+<main>
+
+
+<div id="guestBlock" style="display: none;">
+    <div class="form-card" style="margin: 0 auto;">
+        <h3>Вход / Регистрация</h3>
+        <input id="reg_full_name" placeholder="Полное имя (для регистрации)">
+        <input id="reg_email" placeholder="Email">
+        <input id="reg_login" placeholder="Логин">
+        <input id="reg_password" type="password" placeholder="Пароль">
+        <div class="button-row">
+            <button class="btn btn-success" onclick="register()">Регистрация</button>
+            <button class="btn btn-primary" onclick="login()">Войти</button>
+        </div>
+    </div>
+</div>
+
+
+<div id="userBlock" style="display: none;">
+    <div class="cards-container">
+        <div class="card users">
+            <h3>USERS</h3>
+            <p>Управление пользователями</p>
+            <a href="users.html">Открыть</a>
+        </div>
+        <div class="card questions">
+            <h3>QUESTIONS</h3>
+            <p>Вопросы системы</p>
+            <a href="questions.html">Открыть</a>
+        </div>
+        <div class="card tags">
+            <h3>TAGS</h3>
+            <p>Теги системы</p>
+            <a href="tags.html">Открыть</a>
+        </div>
+        <div class="card todos">
+            <h3>TODOS</h3>
+            <p>Список задач</p>
+            <a href="todos.html">Открыть</a>
+        </div>
+        <div class="card">
+            <h3>KANBAN</h3>
+            <p>Статус задачек</p>
+            <a href="kanban.html">Открыть</a>
+        </div>
+    </div>
+</div>
+
+</main>
+
+<script src="auth.js"></script>
+</body>
+</html>
